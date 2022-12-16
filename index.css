@@ -1,0 +1,114 @@
+* {
+    font-family:'Red Hat Display',sans-serif;
+}
+#QContainer {
+    display:grid;
+    width:50vw;
+    height:50vh;
+    margin-left:25vw;
+    margin-top:15vh;
+}
+#question {
+    font-size:30px;
+    text-align:center;
+}
+.option {
+    background:#cbcbcb;
+    display:table-cell; 
+    vertical-align:middle; 
+    text-align:center;
+    padding:25px;
+    margin-top:0.5vh;
+    font-size:20px;
+    transition:0.2s;
+}
+.option:hover {
+    filter:contrast(70%);
+    cursor:pointer;
+    padding:30px;
+    transition:0.2s;
+    box-shadow:5px 5px 0px #b4b4b4;
+    margin:1vh;
+}
+.selected {
+    background:#2c8ee4 !important;
+}
+.button {
+    width:10vw;
+    height:8vh;
+    background:#2c8ee4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    font-size:20px;
+    user-select:none;
+    border:0px solid transparent;
+}
+.button:hover {
+    background:#1d619d;
+    cursor:pointer;
+}
+#submit {
+    bottom:2vh;
+    right:calc(3vh + 10vw);
+}
+#next {
+    bottom:2vh;
+    right:2vh;
+}
+#prev {
+    bottom:2vh;
+    left:2vh;
+}
+#finish {
+    bottom:11vh;
+    right:2vh;
+    width:14vw !important;
+    display:none;
+}
+#reset {
+    left:42vw;
+    bottom:5vh;
+    width:16vw;
+    display:none;
+}
+#questionNum {
+    position:absolute;
+    text-align:center;
+    font-size:45px;
+    width:10vw;
+    left:45vw;
+    bottom:5vh;
+}
+i {
+    color:black;
+    position:absolute;
+    width:5px;
+    height:5px;
+    top:-10vh;
+    left:3vh;
+}
+#score {
+    position:absolute;
+    width:40vw;
+    height:40vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:75px;
+    top:25vh;
+    left:30vw;
+    z-index:-1;
+}
+#time {
+    position:absolute;
+    font-size:25px;
+    color:#454545;
+    width:40vw;
+    height:10vh;
+    top:50vh;
+    left:30vw;
+    text-align:center;
+    z-index:-1;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28d4a90981.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loadQuestion()" id="body">
+    <div id="QContainer">
+        <div id="question"></div><br>
+        <div class="option" id onclick="select(0)"></div>
+        <div class="option" id onclick="select(1)"></div>
+        <div class="option" id onclick="select(2)"></div>
+        <div class="option" id onclick="select(3)"></div>
+    </div>
+    <button class="button" id="submit" onclick="checkIfRight()">Submit</button>
+    <button class="button" id="next" onclick="difQuestion(1)">Next</button>
+    <button class="button" id="prev" onclick="difQuestion(-1)">Previous</button>
+    <button class="button" id="finish" onclick="scoreScreen()">Finish</button>
+    <div id="questionNum">1/10</div>
+    <i class="fa-solid fa-xmark fa-5x" id="indicator"></i>
+
+    <div id="score"></div>
+    <div id="time"></div>
+    <button class="button" id="reset" onclick="location.reload()">Try Again</button>
+</body>
+<script src="/index.js"></script>
+</html>
